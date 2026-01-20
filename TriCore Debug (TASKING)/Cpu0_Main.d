@@ -164,3 +164,5 @@ Cpu0_Main.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\
 "C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\Infra\\Sfr\\TC38x\IfxCbs_regdef.h" :
 Cpu0_Main.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\Tricore\Asclin\Std\IfxAsclin.h"
 "C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\Tricore\Asclin\Std\IfxAsclin.h" :
+Cpu0_Main.o :	..\endat.h
+..\endat.h :

@@ -40,6 +40,9 @@ Libraries/iLLD/TC3xx/Tricore/Asclin/Std \
 Libraries/iLLD/TC3xx/Tricore/Cpu/Irq \
 Libraries/iLLD/TC3xx/Tricore/Cpu/Std \
 Libraries/iLLD/TC3xx/Tricore/Cpu/Trap \
+Libraries/iLLD/TC3xx/Tricore/Dma/Dma \
+Libraries/iLLD/TC3xx/Tricore/Dma/Std \
+Libraries/iLLD/TC3xx/Tricore/Gtm/Atom/Pwm \
 Libraries/iLLD/TC3xx/Tricore/Gtm/Std \
 Libraries/iLLD/TC3xx/Tricore/Mtu/Std \
 Libraries/iLLD/TC3xx/Tricore/Pms/Std \
