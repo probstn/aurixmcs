@@ -10,7 +10,7 @@
 #define MCS0_WRADDR0   (0x077u)
 
 /* Slow first */
-#define CLK_PERIOD_TICKS   (200u)
+#define CLK_PERIOD_TICKS   (100u)
 #define CLK_DUTY_50        (CLK_PERIOD_TICKS/2u)
 
 static Ifx_GTM *gtm = &MODULE_GTM;

@@ -66,6 +66,7 @@ void core0_main(void)
 
     while(1)
     {
+        /*
         printf("MCS0_CH0: EN=%u PC=%lu R0=%lu ERR=%08lX\r\n",
                        (unsigned)MODULE_GTM.MCS[0].CH0.CTRL.B.EN,
                        (unsigned long)MODULE_GTM.MCS[0].CH0.PC.U,

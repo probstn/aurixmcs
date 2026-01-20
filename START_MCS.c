@@ -75,7 +75,7 @@ static void copy_Mcs_Image(uint32 mcsCore, uint32 *image, uint32 imageSize)
     __dsync();
 }
 
-#define CLK_PERIOD_TICKS   (200u)
+#define CLK_PERIOD_TICKS   (100u)
 #define CLK_DUTY_50        (CLK_PERIOD_TICKS/2u)
 
 /* Helpers (same as before) */
@@ -85,6 +85,8 @@ static void copy_Mcs_Image(uint32 mcsCore, uint32 *image, uint32 imageSize)
 
 /* 15 instructions total -> last (JMP) at 14*4 = 0x38 */
 #define MCS_PROG_END_ADDR   (0x38u)
+
+#define NOP 0x00000000
 
 const uint32 MCS0_CH0_prog[] =
 {
@@ -133,23 +135,8 @@ const uint32 MCS0_CH0_prog[] =
  * */
 void start_Mcs0(void)
 {
-    /* 1. Ensure MCS is disabled before config */
+    /* Disable all channels first */
     GTM_MCS0_CH0_CTRL.B.EN = 0u;
-
-    /* 2. Program image to MCS0 RAM section and clear ECC */
-    copy_Mcs_Image(0, (uint32 *)MCS0_CH0_prog, sizeof(MCS0_CH0_prog));
-
-    /* 3. Enable XOREG register set (extended operation registers) */
-    GTM_MCS0_CTRL_STAT.B.EN_XOREG = 1u;
-
-    /* 4. Clear any previous error flags (Write 1 to Clear) */
-    /* If ERR was 0xFF, this resets it so we can see new errors */
-    GTM_MCS0_ERR.U = 0xFFFFFFFF;
-
-    /* 5. Enable ONLY MCS0_CH0 */
-    GTM_MCS0_CH0_CTRL.B.EN = 1u;
-
-    /* DISABLE unused channels to prevent them from executing garbage code */
     GTM_MCS0_CH1_CTRL.B.EN = 0u;
     GTM_MCS0_CH2_CTRL.B.EN = 0u;
     GTM_MCS0_CH3_CTRL.B.EN = 0u;
@@ -158,9 +145,35 @@ void start_Mcs0(void)
     GTM_MCS0_CH6_CTRL.B.EN = 0u;
     GTM_MCS0_CH7_CTRL.B.EN = 0u;
 
-    /* Select MCS0_WRADDR[0] */
+    /* Enable XOREG register set */
+    GTM_MCS0_CTRL_STAT.B.EN_XOREG = 1u;
+
+    /* Force best scheduling for single active channel
+       SCD_MODE meaning is per TC3xx UM. Typically:
+         0 = round robin
+         1 = accelerated round robin
+         2/3 = prioritized / selected channel
+       You want the accelerated/single-channel one.
+    */
+    GTM_MCS0_CTRL_STAT.B.SCD_CH   = 0u;
+
+    /* >>> Choose the accelerated / single-channel mode for your UM <<< */
+    GTM_MCS0_CTRL_STAT.B.SCD_MODE = 1u;   /* <-- if your UM says 1=accelerated */
+    /* If your UM says 2 or 3 is “selected channel only”, use that instead. */
+
+    /* Clear any previous errors */
+    GTM_MCS0_ERR.U = 0xFFFFFFFFu;
+
+    /* Load program (and clear ECC) */
+    copy_Mcs_Image(0, (uint32 *)MCS0_CH0_prog, sizeof(MCS0_CH0_prog));
+
+    /* Select MCS0_WRADDR[0] via R6[4:0] */
     GTM_MCS0_CH0_R6.U  = (GTM_MCS0_CH0_R6.U & ~0x1Fu) | 0u;
 
-    /* Control bits (ACB) = 0 for first demo */
+    /* ACB = 0 (first demo) */
     GTM_MCS0_CH0_ACB.U = 0u;
+
+    /* Enable only CH0 last */
+    GTM_MCS0_CH0_CTRL.B.EN = 1u;
 }
+
