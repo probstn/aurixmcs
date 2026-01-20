@@ -1,84 +1,89 @@
-#include "endat.h"
-
-#include "Ifx_Types.h"
 #include "IfxGtm.h"
 #include "IfxGtm_Cmu.h"
-#include "IfxGtm_Atom_Pwm.h"
 #include "IfxGtm_PinMap.h"
 
-/* Pick a real TOUT pin from IfxGtm_PinMap.h for your board/package */
-#define GPIO_TOUT_PIN   IfxGtm_ATOM0_0_TOUT8_P02_8_OUT   /* Example only */
-#define GPIO_PERIOD     1000u                              /* any small period is fine */
+#define CLK_TOUT_PIN   IfxGtm_ATOM0_0_TOUT8_P02_8_OUT
+#define ATOM_IDX       (CLK_TOUT_PIN.atom)
+#define ATOM_CH        (CLK_TOUT_PIN.channel)
+
+/* From TC3xx UM table: MCS0_WRADDR[0] = 0x077 */
+#define MCS0_WRADDR0   (0x077u)
+
+/* Slow first */
+#define CLK_PERIOD_TICKS   (200u)
+#define CLK_DUTY_50        (CLK_PERIOD_TICKS/2u)
 
 static Ifx_GTM *gtm = &MODULE_GTM;
-static IfxGtm_Atom_Pwm_Driver g_atomDrv;
-
-/* Keep the ATOM/channel indices handy */
-static uint8 g_atomIdx;
-static uint8 g_atomCh;
 
 static void gtmClockInit(void)
 {
     IfxGtm_enable(gtm);
-
-    /* Set clocks: ATOM uses CMU CLK0 (typical) */
     float32 f = IfxGtm_Cmu_getModuleFrequency(gtm);
     IfxGtm_Cmu_setGclkFrequency(gtm, f);
     IfxGtm_Cmu_setClkFrequency(gtm, IfxGtm_Cmu_Clk_0, f);
-
-    /* Enable the needed clocks (CLK0 for ATOM) */
     IfxGtm_Cmu_enableClocks(gtm, IFXGTM_CMU_CLKEN_CLK0);
 }
 
-static void atomAsGpioInit(void)
+static void atomClk_withAruInit(void)
 {
-    IfxGtm_Atom_Pwm_Config cfg;
-    IfxGtm_Atom_Pwm_initConfig(&cfg, gtm);
+    Ifx_GTM_ATOM *atom = &gtm->ATOM[ATOM_IDX];
+    Ifx_GTM_ATOM_CH *ch = &atom->CH0;
+    Ifx_GTM_ATOM_AGC *agc = &atom->AGC;
 
-    g_atomIdx = GPIO_TOUT_PIN.atom;
-    g_atomCh  = GPIO_TOUT_PIN.channel;
+    /* 1. Route TOUT */
+    IfxGtm_PinMap_setAtomTout(&CLK_TOUT_PIN,
+                             IfxPort_OutputMode_pushPull,
+                             IfxPort_PadDriver_cmosAutomotiveSpeed1);
 
-    cfg.atom        = g_atomIdx;
-    cfg.atomChannel = g_atomCh;
+   /* 2. Configure for SOMP mode but KEEP ARU DISABLED initially [cite: 17, 1459] */
+    /* Mode=SOMP (0x2), ARU_EN=0 */
+    ch->CTRL.U = (2u << 0);
 
-    /* We run PWM mode but use it as a static output by forcing duty 0% or 100% */
-    cfg.period      = GPIO_PERIOD;
+    /* 3. Write initial period/duty to Shadow Registers */
+    ch->SR0.U = CLK_PERIOD_TICKS;
+    ch->SR1.U = 0u;
 
-    /* Start LOW: 0% duty */
-    cfg.dutyCycle   = 0u;
+    /* 4. Set the ARU Read Address */
+    ch->RDADDR.U = MCS0_WRADDR0;
 
-    /* Pin routing */
-    cfg.pin.outputPin = &GPIO_TOUT_PIN;
+    /* 5. Enable Channel and Output */
+    IfxGtm_Atom_Agc_enableChannelUpdate(agc, ATOM_CH, TRUE);
+    IfxGtm_Atom_Agc_enableChannel(agc, ATOM_CH, TRUE, FALSE);
+    IfxGtm_Atom_Agc_enableChannelOutput(agc, ATOM_CH, TRUE, FALSE);
 
-    /* Use synchronous updates (writes go to SRx; applied by AGC trigger) */
-    cfg.synchronousUpdateEnabled = TRUE;
-    cfg.immediateStartEnabled    = TRUE;
+    /* 6. FORCE UPDATE [cite: 1459]
+     * This moves SR0 (200) -> CM0 and SR1 (0) -> CM1.
+     * Now the ATOM has a valid period and starts counting.
+     */
+    IfxGtm_Atom_Agc_trigger(agc);
 
-    IfxGtm_Atom_Pwm_init(&g_atomDrv, &cfg);
+    /* 7. NOW Enable ARU Input [cite: 1459]
+     * The ATOM is currently running. When CN0 hits 200, it will
+     * automatically request new data from the ARU address 0x77.
+     */
+    ch->CTRL.B.ARU_EN = 1u;
+}
+void atomCpuPwmTest(void)
+{
+    Ifx_GTM_ATOM *atom = &MODULE_GTM.ATOM[ATOM_IDX];
+    Ifx_GTM_ATOM_CH *ch = &atom->CH0;
+    Ifx_GTM_ATOM_AGC *agc = &atom->AGC;
 
-    /* Ensure channel is enabled and output is enabled via AGC */
-    {
-        Ifx_GTM_ATOM *atom = &gtm->ATOM[g_atomIdx];
-        Ifx_GTM_ATOM_AGC *agc = &atom->AGC;
+    /* SOMP, no ARU */
+    ch->CTRL.U = (2u << 0) + (0u << 11) + (0u << 12);  /* SOMP, SL low, CLK0 */
 
-        /* Enable update + enable channel + enable output */
-        IfxGtm_Atom_Agc_enableChannelUpdate(agc, g_atomCh, TRUE);
-        IfxGtm_Atom_Agc_enableChannel(agc, g_atomCh, TRUE, FALSE);
-        IfxGtm_Atom_Agc_enableChannelOutput(agc, g_atomCh, TRUE, FALSE);
+    ch->SR0.U = CLK_PERIOD_TICKS;
+    ch->SR1.U = CLK_DUTY_50;
 
-        /* Apply */
-        IfxGtm_Atom_Agc_trigger(agc);
-    }
+    IfxGtm_Atom_Agc_enableChannelUpdate(agc, ATOM_CH, TRUE);
+    IfxGtm_Atom_Agc_enableChannel(agc, ATOM_CH, TRUE, FALSE);
+    IfxGtm_Atom_Agc_enableChannelOutput(agc, ATOM_CH, TRUE, FALSE);
+    IfxGtm_Atom_Agc_trigger(agc);
 }
 
-void atomOut_setState(boolean state)
-{
-    g_atomDrv.atom->CH0.SR1.U = state ? GPIO_PERIOD : 0;     /* duty ~ 100% (see note below) */
-}
 
-
-void endatInit(void)
+void initAtom(void)
 {
     gtmClockInit();
-    atomAsGpioInit();
+    atomClk_withAruInit();
 }

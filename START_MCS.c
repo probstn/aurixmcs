@@ -75,12 +75,56 @@ static void copy_Mcs_Image(uint32 mcsCore, uint32 *image, uint32 imageSize)
     __dsync();
 }
 
+#define CLK_PERIOD_TICKS   (200u)
+#define CLK_DUTY_50        (CLK_PERIOD_TICKS/2u)
+
+/* Helpers (same as before) */
+#define MCS_MOVL(regA, imm24)   (0x10000000u | (((uint32)(regA) & 0xFu) << 24) | ((uint32)(imm24) & 0x00FFFFFFu))
+#define MCS_AWRI(regA, regB)    (0xB0000000u | (((uint32)(regA) & 0xFu) << 24) | (((uint32)(regB) & 0xFu) << 20) | (0x5u << 16))
+#define MCS_JMP(addr)           (0xE0000000u | ((uint32)(addr) & 0x0000FFFcu))
+
+/* 15 instructions total -> last (JMP) at 14*4 = 0x38 */
+#define MCS_PROG_END_ADDR   (0x38u)
+
 const uint32 MCS0_CH0_prog[] =
 {
-    0x10000000, /* MOVL  R0, 0  */
-    0x20000001, /* ADDL  R0, 1  */
-    0xE0000004  /* JMP   0x04   */
+    /* 0x00: Init Period (R2 = 20 ticks) */
+    MCS_MOVL(2u, CLK_PERIOD_TICKS),
+
+    /* 0x04: Init Duty (R3 = 10 ticks = 50%) */
+    MCS_MOVL(3u, CLK_DUTY_50),
+
+    /* --- BURST LABEL (0x08) --- */
+
+    /* Generate 5 Pulses */
+    /* Note: R3 holds the "Active" Duty Cycle here */
+    MCS_AWRI(2u, 3u),   /* Pulse 1 */
+    MCS_AWRI(2u, 3u),   /* Pulse 2 */
+    MCS_AWRI(2u, 3u),   /* Pulse 3 */
+    MCS_AWRI(2u, 3u),   /* Pulse 4 */
+    MCS_AWRI(2u, 3u),   /* Pulse 5 */
+
+    /* --- GAP GENERATION --- */
+
+    /* 0x1C: Temporarily load R3 with 0 (0% Duty) */
+    MCS_MOVL(3u, 0u),
+
+    /* Send "0" for 5 cycles to create a gap */
+    MCS_AWRI(2u, 3u),   /* Gap 1 */
+    MCS_AWRI(2u, 3u),   /* Gap 2 */
+    MCS_AWRI(2u, 3u),   /* Gap 3 */
+    MCS_AWRI(2u, 3u),   /* Gap 4 */
+    MCS_AWRI(2u, 3u),   /* Gap 5 */
+
+    /* --- RESTORE & LOOP --- */
+
+    /* 0x30: Reload R3 with 50% Duty for the next burst */
+    MCS_MOVL(3u, CLK_DUTY_50),
+
+    /* 0x34: Jump back to Burst Label (0x08) */
+    MCS_JMP(0x08)
 };
+
 
 /* This function configures and starts GTM-MCS0_CH0-7
  * - calls the function "copy_Mcs_Image" to copy MCSx program image into its dedicate GTM-RAM portion
@@ -113,4 +157,10 @@ void start_Mcs0(void)
     GTM_MCS0_CH5_CTRL.B.EN = 0u;
     GTM_MCS0_CH6_CTRL.B.EN = 0u;
     GTM_MCS0_CH7_CTRL.B.EN = 0u;
+
+    /* Select MCS0_WRADDR[0] */
+    GTM_MCS0_CH0_R6.U  = (GTM_MCS0_CH0_R6.U & ~0x1Fu) | 0u;
+
+    /* Control bits (ACB) = 0 for first demo */
+    GTM_MCS0_CH0_ACB.U = 0u;
 }

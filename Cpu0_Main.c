@@ -61,12 +61,11 @@ void core0_main(void)
 
 
     SERIALIO_Init(115200);
-    endatInit();
+    initAtom();
     start_Mcs0();
 
     while(1)
     {
-        atomOut_setState(1);
         printf("MCS0_CH0: EN=%u PC=%lu R0=%lu ERR=%08lX\r\n",
                        (unsigned)MODULE_GTM.MCS[0].CH0.CTRL.B.EN,
                        (unsigned long)MODULE_GTM.MCS[0].CH0.PC.U,
@@ -74,6 +73,5 @@ void core0_main(void)
                        (unsigned long)MODULE_GTM.MCS[0].ERR.U);
 
         /* ~200 ms delay */
-        atomOut_setState(0);
     }
 }
