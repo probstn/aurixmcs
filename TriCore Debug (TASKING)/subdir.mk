@@ -8,8 +8,8 @@ C_SRCS += \
 "../Cpu1_Main.c" \
 "../Cpu2_Main.c" \
 "../Cpu3_Main.c" \
-"../START_MCS.c" \
 "../endat.c" \
+"../mcs.c" \
 "../serialio.c" 
 
 COMPILED_SRCS += \
@@ -17,8 +17,8 @@ COMPILED_SRCS += \
 "Cpu1_Main.src" \
 "Cpu2_Main.src" \
 "Cpu3_Main.src" \
-"START_MCS.src" \
 "endat.src" \
+"mcs.src" \
 "serialio.src" 
 
 C_DEPS += \
@@ -26,8 +26,8 @@ C_DEPS += \
 "./Cpu1_Main.d" \
 "./Cpu2_Main.d" \
 "./Cpu3_Main.d" \
-"./START_MCS.d" \
 "./endat.d" \
+"./mcs.d" \
 "./serialio.d" 
 
 OBJS += \
@@ -35,8 +35,8 @@ OBJS += \
 "Cpu1_Main.o" \
 "Cpu2_Main.o" \
 "Cpu3_Main.o" \
-"START_MCS.o" \
 "endat.o" \
+"mcs.o" \
 "serialio.o" 
 
 
@@ -57,13 +57,13 @@ OBJS += \
 	cctc -cs --dep-file="$*.d" --misrac-version=2012 -D__CPU__=tc38x "-fC:/Users/Zbook Firefly14 G8/AURIX-v1.10.28-workspace/mcsdemo/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Wc-w508 -Ctc38x -Y0 -N0 -Z0 -o "$@" "$<"
 "Cpu3_Main.o":"Cpu3_Main.src" "subdir.mk"
 	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
-"START_MCS.src":"../START_MCS.c" "subdir.mk"
-	cctc -cs --dep-file="$*.d" --misrac-version=2012 -D__CPU__=tc38x "-fC:/Users/Zbook Firefly14 G8/AURIX-v1.10.28-workspace/mcsdemo/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Wc-w508 -Ctc38x -Y0 -N0 -Z0 -o "$@" "$<"
-"START_MCS.o":"START_MCS.src" "subdir.mk"
-	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
 "endat.src":"../endat.c" "subdir.mk"
 	cctc -cs --dep-file="$*.d" --misrac-version=2012 -D__CPU__=tc38x "-fC:/Users/Zbook Firefly14 G8/AURIX-v1.10.28-workspace/mcsdemo/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Wc-w508 -Ctc38x -Y0 -N0 -Z0 -o "$@" "$<"
 "endat.o":"endat.src" "subdir.mk"
+	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
+"mcs.src":"../mcs.c" "subdir.mk"
+	cctc -cs --dep-file="$*.d" --misrac-version=2012 -D__CPU__=tc38x "-fC:/Users/Zbook Firefly14 G8/AURIX-v1.10.28-workspace/mcsdemo/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Wc-w508 -Ctc38x -Y0 -N0 -Z0 -o "$@" "$<"
+"mcs.o":"mcs.src" "subdir.mk"
 	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
 "serialio.src":"../serialio.c" "subdir.mk"
 	cctc -cs --dep-file="$*.d" --misrac-version=2012 -D__CPU__=tc38x "-fC:/Users/Zbook Firefly14 G8/AURIX-v1.10.28-workspace/mcsdemo/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Wc-w508 -Ctc38x -Y0 -N0 -Z0 -o "$@" "$<"
@@ -73,7 +73,7 @@ OBJS += \
 clean: clean--2e-
 
 clean--2e-:
-	-$(RM) ./Cpu0_Main.d ./Cpu0_Main.o ./Cpu0_Main.src ./Cpu1_Main.d ./Cpu1_Main.o ./Cpu1_Main.src ./Cpu2_Main.d ./Cpu2_Main.o ./Cpu2_Main.src ./Cpu3_Main.d ./Cpu3_Main.o ./Cpu3_Main.src ./START_MCS.d ./START_MCS.o ./START_MCS.src ./endat.d ./endat.o ./endat.src ./serialio.d ./serialio.o ./serialio.src
+	-$(RM) ./Cpu0_Main.d ./Cpu0_Main.o ./Cpu0_Main.src ./Cpu1_Main.d ./Cpu1_Main.o ./Cpu1_Main.src ./Cpu2_Main.d ./Cpu2_Main.o ./Cpu2_Main.src ./Cpu3_Main.d ./Cpu3_Main.o ./Cpu3_Main.src ./endat.d ./endat.o ./endat.src ./mcs.d ./mcs.o ./mcs.src ./serialio.d ./serialio.o ./serialio.src
 
 .PHONY: clean--2e-
 

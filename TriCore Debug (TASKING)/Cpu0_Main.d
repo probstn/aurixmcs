@@ -1,5 +1,7 @@
 Cpu0_Main.o :	../Cpu0_Main.c
 ../Cpu0_Main.c :
+Cpu0_Main.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\mcs.h"
+"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\mcs.h" :
 Cpu0_Main.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\\Cpu\\Std\Ifx_Types.h"
 "C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\\Cpu\\Std\Ifx_Types.h" :
 Cpu0_Main.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\Infra\\Platform\Tricore\Compilers\Compilers.h"
@@ -14,6 +16,12 @@ Cpu0_Main.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\
 "C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\\Cpu\\Std\Platform_Types.h" :
 Cpu0_Main.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\\Cpu\\Std\Ifx_TypesTasking.h"
 "C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\\Cpu\\Std\Ifx_TypesTasking.h" :
+Cpu0_Main.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\Infra\\Sfr\\TC38x\IfxGtm_reg.h"
+"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\Infra\\Sfr\\TC38x\IfxGtm_reg.h" :
+Cpu0_Main.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\Infra\\Sfr\\TC38x\IfxGtm_regdef.h"
+"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\Infra\\Sfr\\TC38x\IfxGtm_regdef.h" :
+Cpu0_Main.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\Infra\\Sfr\\TC38x\Ifx_TypesReg.h"
+"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\Infra\\Sfr\\TC38x\Ifx_TypesReg.h" :
 Cpu0_Main.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\\Cpu\\Std\IfxCpu.h"
 "C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\\Cpu\\Std\IfxCpu.h" :
 Cpu0_Main.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\_Impl\IfxCpu_cfg.h"
@@ -28,8 +36,6 @@ Cpu0_Main.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\
 "C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\Infra\\Sfr\\TC38x\IfxCpu_reg.h" :
 Cpu0_Main.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\Infra\\Sfr\\TC38x\IfxCpu_regdef.h"
 "C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\Infra\\Sfr\\TC38x\IfxCpu_regdef.h" :
-Cpu0_Main.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\Infra\\Sfr\\TC38x\Ifx_TypesReg.h"
-"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\Infra\\Sfr\\TC38x\Ifx_TypesReg.h" :
 Cpu0_Main.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\Infra\\Sfr\\TC38x\IfxSrc_reg.h"
 "C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\Infra\\Sfr\\TC38x\IfxSrc_reg.h" :
 Cpu0_Main.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\Infra\\Sfr\\TC38x\IfxSrc_regdef.h"
@@ -110,12 +116,6 @@ Cpu0_Main.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\
 "C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\Infra\\Sfr\\TC38x\IfxPms_regdef.h" :
 Cpu0_Main.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\\Scu\\Std\IfxScuCcu.h"
 "C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\\Scu\\Std\IfxScuCcu.h" :
-Cpu0_Main.o :	..\START_MCS.h
-..\START_MCS.h :
-Cpu0_Main.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\Infra\\Sfr\\TC38x\IfxGtm_reg.h"
-"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\Infra\\Sfr\\TC38x\IfxGtm_reg.h" :
-Cpu0_Main.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\Infra\\Sfr\\TC38x\IfxGtm_regdef.h"
-"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\Infra\\Sfr\\TC38x\IfxGtm_regdef.h" :
 Cpu0_Main.o :	..\serialio.h
 ..\serialio.h :
 Cpu0_Main.o :	"C:\Infineon\AURIX-Studio-1.10.28\tools\Compilers\Tasking_1.1r8\ctc\include\stdio.h"

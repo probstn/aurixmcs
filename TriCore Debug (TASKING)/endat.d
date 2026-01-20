@@ -68,24 +68,14 @@ endat.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Lib
 "C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\\Gtm\\Std\IfxGtm_Cmu.h" :
 endat.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\_Impl\IfxGtm_cfg.h"
 "C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\_Impl\IfxGtm_cfg.h" :
-endat.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\\_PinMap\IfxGtm_PinMap.h"
-"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\\_PinMap\IfxGtm_PinMap.h" :
-endat.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\\_PinMap\\TC38x\IfxGtm_PinMap_TC38x_516.h"
-"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\\_PinMap\\TC38x\IfxGtm_PinMap_TC38x_516.h" :
+endat.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\\Gtm\\Std\IfxGtm_Atom.h"
+"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\\Gtm\\Std\IfxGtm_Atom.h" :
 endat.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\_Impl\IfxGtm_cfg.h"
 "C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\_Impl\IfxGtm_cfg.h" :
-endat.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\Port\Std\IfxPort.h"
-"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\Port\Std\IfxPort.h" :
-endat.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\\_PinMap\Ifx_PinMap.h"
-"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\\_PinMap\Ifx_PinMap.h" :
-endat.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\Gtm\Std\IfxGtm_Atom.h"
-"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\Gtm\Std\IfxGtm_Atom.h" :
-endat.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\_Impl\IfxGtm_cfg.h"
-"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\_Impl\IfxGtm_cfg.h" :
-endat.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\Gtm\Std\IfxGtm.h"
-"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\Gtm\Std\IfxGtm.h" :
-endat.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\Gtm\Std\IfxGtm_Tbu.h"
-"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\Gtm\Std\IfxGtm_Tbu.h" :
+endat.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\\Gtm\\Std\IfxGtm.h"
+"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\\Gtm\\Std\IfxGtm.h" :
+endat.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\\Gtm\\Std\IfxGtm_Tbu.h"
+"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\\Gtm\\Std\IfxGtm_Tbu.h" :
 endat.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\_Impl\IfxGtm_cfg.h"
 "C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\_Impl\IfxGtm_cfg.h" :
 endat.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\Src\Std\IfxSrc.h"
@@ -98,15 +88,33 @@ endat.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Lib
 "C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\Infra\\Sfr\\TC38x\IfxSrc_reg.h" :
 endat.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\Infra\\Sfr\\TC38x\IfxSrc_regdef.h"
 "C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\Infra\\Sfr\\TC38x\IfxSrc_regdef.h" :
-endat.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\Gtm\Std\IfxGtm_Cmu.h"
-"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\Gtm\Std\IfxGtm_Cmu.h" :
+endat.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\\Gtm\\Std\IfxGtm_Cmu.h"
+"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\\Gtm\\Std\IfxGtm_Cmu.h" :
+endat.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\\_PinMap\IfxGtm_PinMap.h"
+"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\\_PinMap\IfxGtm_PinMap.h" :
+endat.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\\_PinMap\\TC38x\IfxGtm_PinMap_TC38x_516.h"
+"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\\_PinMap\\TC38x\IfxGtm_PinMap_TC38x_516.h" :
+endat.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\_Impl\IfxGtm_cfg.h"
+"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\_Impl\IfxGtm_cfg.h" :
+endat.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\Port\Std\IfxPort.h"
+"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\Port\Std\IfxPort.h" :
+endat.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\\_PinMap\Ifx_PinMap.h"
+"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\\_PinMap\Ifx_PinMap.h" :
+endat.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\Gtm\Std\IfxGtm_Atom.h"
+"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\Gtm\Std\IfxGtm_Atom.h" :
 endat.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\Gtm\Std\IfxGtm_Tom.h"
 "C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\Gtm\Std\IfxGtm_Tom.h" :
 endat.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\_Impl\IfxGtm_cfg.h"
 "C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\_Impl\IfxGtm_cfg.h" :
+endat.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\Gtm\Std\IfxGtm.h"
+"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\Gtm\Std\IfxGtm.h" :
 endat.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\Gtm\Std\IfxGtm_Tbu.h"
 "C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\Gtm\Std\IfxGtm_Tbu.h" :
+endat.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\Gtm\Std\IfxGtm_Cmu.h"
+"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\Gtm\Std\IfxGtm_Cmu.h" :
 endat.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\Gtm\Std\IfxGtm_Tim.h"
 "C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\Gtm\Std\IfxGtm_Tim.h" :
 endat.o :	"C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\_Impl\IfxGtm_cfg.h"
 "C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\Libraries\\iLLD\\TC3xx\\Tricore\_Impl\IfxGtm_cfg.h" :
+endat.o :	..\endat.h
+..\endat.h :

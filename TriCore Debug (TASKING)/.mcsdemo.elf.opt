@@ -178,6 +178,6 @@
 "Cpu1_Main.o"
 "Cpu2_Main.o"
 "Cpu3_Main.o"
-"START_MCS.o"
 "endat.o"
+"mcs.o"
 "serialio.o"

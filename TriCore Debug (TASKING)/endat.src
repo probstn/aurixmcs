@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
-	.compiler_invocation	"ctc -f cc24424a --dep-file=endat.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc38x -D__CPU_TC38X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc38x -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Configurations -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\Infra -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\Infra\\\\Platform -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\Infra\\\\Sfr -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\Infra\\\\Sfr\\\\TC38x -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\Infra\\\\Ssw -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\Infra\\\\Ssw\\\\TC3xx -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\Infra\\\\Ssw\\\\TC3xx\\\\Tricore -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\Service -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\Service\\\\CpuGeneric -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Asclin -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Asclin\\\\Asc -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Asclin\\\\Std -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Gtm -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Mtu -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Pms -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Pms\\\\Std -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Port -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Port\\\\Std -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Scu -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Scu\\\\Std -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Src -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Src\\\\Std -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Stm -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Stm\\\\Std -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_Impl -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_Lib -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_Lib\\\\DataHandling -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_PinMap -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_PinMap\\\\TC38x -g2 -w544 -w557 -w508 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2012 -o endat.src ../endat.c"
+	.compiler_invocation	"ctc -f cc9844a --dep-file=endat.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc38x -D__CPU_TC38X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc38x -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Configurations -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\Infra -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\Infra\\\\Platform -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\Infra\\\\Sfr -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\Infra\\\\Sfr\\\\TC38x -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\Infra\\\\Ssw -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\Infra\\\\Ssw\\\\TC3xx -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\Infra\\\\Ssw\\\\TC3xx\\\\Tricore -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\Service -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\Service\\\\CpuGeneric -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Asclin -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Asclin\\\\Asc -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Asclin\\\\Std -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Gtm -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Mtu -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Pms -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Pms\\\\Std -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Port -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Port\\\\Std -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Scu -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Scu\\\\Std -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Src -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Src\\\\Std -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Stm -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Stm\\\\Std -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_Impl -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_Lib -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_Lib\\\\DataHandling -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_PinMap -IC:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_PinMap\\\\TC38x -g2 -w544 -w557 -w508 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2012 -o endat.src ../endat.c"
 	.compiler_name		"ctc"
 	;source	'../endat.c'
 
@@ -12,225 +12,261 @@ $TC162
 	.align	2
 	
 ; Function gtmClockInit
-.L3:
+.L5:
 gtmClockInit:	.type	func
 	movh.a	a15,#@his(gtm)
 	lea	a15,[a15]@los(gtm)
 	ld.a	a4,[a15]
 	call	IfxGtm_enable
-.L37:
+.L40:
 	movh.a	a15,#@his(gtm)
 	lea	a15,[a15]@los(gtm)
 	ld.a	a4,[a15]
 	call	IfxGtm_Cmu_getModuleFrequency
-.L53:
+.L65:
 	mov	d15,d2
-.L55:
+.L67:
 	movh.a	a15,#@his(gtm)
 	lea	a15,[a15]@los(gtm)
 	ld.a	a4,[a15]
-.L88:
+.L112:
 	mov	d4,d15
-.L54:
+.L66:
 	call	IfxGtm_Cmu_setGclkFrequency
-.L56:
+.L68:
 	movh.a	a15,#@his(gtm)
 	lea	a15,[a15]@los(gtm)
 	ld.a	a4,[a15]
-.L89:
+.L113:
 	mov	d4,#0
-.L90:
+.L114:
 	mov	d5,d15
-.L57:
+.L69:
 	call	IfxGtm_Cmu_setClkFrequency
-.L58:
+.L70:
 	movh.a	a15,#@his(gtm)
 	lea	a15,[a15]@los(gtm)
 	ld.a	a4,[a15]
-.L91:
+.L115:
 	mov	d4,#2
 	call	IfxGtm_Cmu_enableClocks
-.L92:
+.L116:
 	ret
-.L36:
+.L39:
 	
 __gtmClockInit_function_end:
 	.size	gtmClockInit,__gtmClockInit_function_end-gtmClockInit
-.L18:
+.L25:
 	; End of function
 	
-	.sdecl	'.text.endat.atomClk_withAruInit',code,cluster('atomClk_withAruInit')
-	.sect	'.text.endat.atomClk_withAruInit'
+	.sdecl	'.text.endat.atomClockInit',code,cluster('atomClockInit')
+	.sect	'.text.endat.atomClockInit'
 	.align	2
 	
-; Function atomClk_withAruInit
-.L5:
-atomClk_withAruInit:	.type	func
-	movh.a	a15,#@his(IfxGtm_ATOM0_0_TOUT8_P02_8_OUT)
-	lea	a15,[a15]@los(IfxGtm_ATOM0_0_TOUT8_P02_8_OUT)
-	ld.bu	d15,[a15]
-.L97:
-	mov	d0,#2048
-	mul	d15,d0
-.L98:
-	movh.a	a15,#@his(gtm)
-	lea	a15,[a15]@los(gtm)
-	ld.a	a15,[a15]
-.L99:
-	addsc.a	a15,a15,d15,#0
-	movh.a	a3,#15
-	add.a	a3,a15
-	lea	a15,[a3]-32768
-.L59:
-	lea	a12,[a15]64
-.L60:
-	movh.a	a4,#@his(IfxGtm_ATOM0_0_TOUT8_P02_8_OUT)
-	lea	a4,[a4]@los(IfxGtm_ATOM0_0_TOUT8_P02_8_OUT)
-.L100:
-	mov	d4,#128
-.L101:
-	mov	d5,#0
-	call	IfxGtm_PinMap_setAtomTout
-.L102:
-	mov	d15,#2
-.L103:
-	st.w	[a15]4,d15
-.L104:
-	mov	d15,#100
-.L105:
-	st.w	[a15]8,d15
-.L106:
-	mov	d15,#0
-.L107:
-	st.w	[a15]12,d15
-.L108:
-	mov	d15,#119
-.L109:
-	st.w	[a15],d15
-.L110:
-	movh.a	a2,#@his(IfxGtm_ATOM0_0_TOUT8_P02_8_OUT)
-	lea	a2,[a2]@los(IfxGtm_ATOM0_0_TOUT8_P02_8_OUT)
-	ld.b	d4,[a2]1
-.L111:
-	mov	d5,#1
-	mov.aa	a4,a12
-.L61:
-	call	IfxGtm_Atom_Agc_enableChannelUpdate
-.L62:
-	movh.a	a2,#@his(IfxGtm_ATOM0_0_TOUT8_P02_8_OUT)
-	lea	a2,[a2]@los(IfxGtm_ATOM0_0_TOUT8_P02_8_OUT)
-	ld.b	d4,[a2]1
-.L112:
-	mov	d5,#1
-.L113:
-	mov	d6,#0
-	mov.aa	a4,a12
-.L63:
-	call	IfxGtm_Atom_Agc_enableChannel
-.L64:
-	movh.a	a2,#@his(IfxGtm_ATOM0_0_TOUT8_P02_8_OUT)
-	lea	a2,[a2]@los(IfxGtm_ATOM0_0_TOUT8_P02_8_OUT)
-	ld.b	d4,[a2]1
-.L114:
-	mov	d5,#1
-.L115:
-	mov	d6,#0
-	mov.aa	a4,a12
-.L65:
-	call	IfxGtm_Atom_Agc_enableChannelOutput
-.L66:
-	mov.aa	a4,a12
-.L67:
-	call	IfxGtm_Atom_Agc_trigger
-.L68:
-	ld.w	d15,[a15]4
-.L116:
-	or	d15,#8
-	st.w	[a15]4,d15
-.L117:
-	ret
-.L40:
-	
-__atomClk_withAruInit_function_end:
-	.size	atomClk_withAruInit,__atomClk_withAruInit_function_end-atomClk_withAruInit
-.L23:
-	; End of function
-	
-	.sdecl	'.text.endat.atomCpuPwmTest',code,cluster('atomCpuPwmTest')
-	.sect	'.text.endat.atomCpuPwmTest'
-	.align	2
-	
-	.global	atomCpuPwmTest
-; Function atomCpuPwmTest
+; Function atomClockInit
 .L7:
-atomCpuPwmTest:	.type	func
+atomClockInit:	.type	func
 	movh.a	a15,#@his(IfxGtm_ATOM0_0_TOUT8_P02_8_OUT)
 	lea	a15,[a15]@los(IfxGtm_ATOM0_0_TOUT8_P02_8_OUT)
 	ld.bu	d15,[a15]
-.L122:
+.L121:
 	mov	d0,#2048
 	mul	d15,d0
 	mov.a	a15,d15
 	movh.a	a3,#61471
 	add.a	a3,a15
-	lea	a15,[a3]-32768
-.L69:
-	lea	a12,[a15]64
+	lea	a2,[a3]-32768
 .L71:
-	mov	d15,#2
-.L123:
-	st.w	[a15]4,d15
-.L124:
-	mov	d15,#100
-.L125:
-	st.w	[a15]8,d15
-.L126:
-	mov	d15,#50
-.L127:
-	st.w	[a15]12,d15
-.L128:
 	movh.a	a15,#@his(IfxGtm_ATOM0_0_TOUT8_P02_8_OUT)
-.L70:
 	lea	a15,[a15]@los(IfxGtm_ATOM0_0_TOUT8_P02_8_OUT)
-	ld.b	d4,[a15]1
-.L129:
-	mov	d5,#1
-	mov.aa	a4,a12
-.L72:
-	call	IfxGtm_Atom_Agc_enableChannelUpdate
+	ld.b	d0,[a15]1
+.L51:
+	mov.d	d15,a2
 .L73:
-	movh.a	a15,#@his(IfxGtm_ATOM0_0_TOUT8_P02_8_OUT)
-	lea	a15,[a15]@los(IfxGtm_ATOM0_0_TOUT8_P02_8_OUT)
-	ld.b	d4,[a15]1
-.L130:
-	mov	d5,#1
-.L131:
-	mov	d6,#0
-	mov.aa	a4,a12
+	mul	d0,d0,#128
+.L122:
+	add	d15,d0
 .L74:
-	call	IfxGtm_Atom_Agc_enableChannel
+	mov.a	a15,d15
+	j	.L2
+.L2:
+	lea	a12,[a2]64
 .L75:
-	movh.a	a15,#@his(IfxGtm_ATOM0_0_TOUT8_P02_8_OUT)
-	lea	a15,[a15]@los(IfxGtm_ATOM0_0_TOUT8_P02_8_OUT)
-	ld.b	d4,[a15]1
+	movh.a	a4,#@his(IfxGtm_ATOM0_0_TOUT8_P02_8_OUT)
+	lea	a4,[a4]@los(IfxGtm_ATOM0_0_TOUT8_P02_8_OUT)
+.L123:
+	mov	d4,#128
+.L124:
+	mov	d5,#0
+	call	IfxGtm_PinMap_setAtomTout
+.L72:
+	mov	d15,#2
+.L125:
+	st.w	[a15]4,d15
+.L126:
+	mov	d15,#100
+.L127:
+	st.w	[a15]8,d15
+.L128:
+	mov	d15,#0
+.L129:
+	st.w	[a15]12,d15
+.L130:
+	mov	d15,#119
+.L131:
+	st.w	[a15],d15
 .L132:
-	mov	d5,#1
+	movh.a	a2,#@his(IfxGtm_ATOM0_0_TOUT8_P02_8_OUT)
+	lea	a2,[a2]@los(IfxGtm_ATOM0_0_TOUT8_P02_8_OUT)
+	ld.b	d4,[a2]1
 .L133:
-	mov	d6,#0
+	mov	d5,#1
 	mov.aa	a4,a12
 .L76:
-	call	IfxGtm_Atom_Agc_enableChannelOutput
+	call	IfxGtm_Atom_Agc_enableChannelUpdate
 .L77:
+	movh.a	a2,#@his(IfxGtm_ATOM0_0_TOUT8_P02_8_OUT)
+	lea	a2,[a2]@los(IfxGtm_ATOM0_0_TOUT8_P02_8_OUT)
+	ld.b	d4,[a2]1
+.L134:
+	mov	d5,#1
+.L135:
+	mov	d6,#0
 	mov.aa	a4,a12
 .L78:
-	call	IfxGtm_Atom_Agc_trigger
+	call	IfxGtm_Atom_Agc_enableChannel
 .L79:
+	movh.a	a2,#@his(IfxGtm_ATOM0_0_TOUT8_P02_8_OUT)
+	lea	a2,[a2]@los(IfxGtm_ATOM0_0_TOUT8_P02_8_OUT)
+	ld.b	d4,[a2]1
+.L136:
+	mov	d5,#1
+.L137:
+	mov	d6,#0
+	mov.aa	a4,a12
+.L80:
+	call	IfxGtm_Atom_Agc_enableChannelOutput
+.L81:
+	mov.aa	a4,a12
+.L82:
+	call	IfxGtm_Atom_Agc_trigger
+.L83:
+	ld.w	d15,[a15]4
+.L138:
+	or	d15,#8
+	st.w	[a15]4,d15
+.L139:
 	ret
-.L47:
+.L43:
 	
-__atomCpuPwmTest_function_end:
-	.size	atomCpuPwmTest,__atomCpuPwmTest_function_end-atomCpuPwmTest
-.L28:
+__atomClockInit_function_end:
+	.size	atomClockInit,__atomClockInit_function_end-atomClockInit
+.L30:
+	; End of function
+	
+	.sdecl	'.text.endat.atomDataInit',code,cluster('atomDataInit')
+	.sect	'.text.endat.atomDataInit'
+	.align	2
+	
+; Function atomDataInit
+.L9:
+atomDataInit:	.type	func
+	movh.a	a15,#@his(IfxGtm_ATOM0_1_TOUT1_P02_1_OUT)
+	lea	a15,[a15]@los(IfxGtm_ATOM0_1_TOUT1_P02_1_OUT)
+	ld.bu	d15,[a15]
+.L144:
+	mov	d0,#2048
+	mul	d15,d0
+	mov.a	a15,d15
+	movh.a	a3,#61471
+	add.a	a3,a15
+	lea	a2,[a3]-32768
+.L84:
+	movh.a	a15,#@his(IfxGtm_ATOM0_1_TOUT1_P02_1_OUT)
+	lea	a15,[a15]@los(IfxGtm_ATOM0_1_TOUT1_P02_1_OUT)
+	ld.b	d0,[a15]1
+.L61:
+	mov.d	d15,a2
+.L86:
+	mul	d0,d0,#128
+.L145:
+	add	d15,d0
+.L87:
+	mov.a	a15,d15
+	j	.L3
+.L3:
+	lea	a12,[a2]64
+.L88:
+	movh.a	a4,#@his(IfxGtm_ATOM0_1_TOUT1_P02_1_OUT)
+	lea	a4,[a4]@los(IfxGtm_ATOM0_1_TOUT1_P02_1_OUT)
+.L146:
+	mov	d4,#128
+.L147:
+	mov	d5,#0
+	call	IfxGtm_PinMap_setAtomTout
+.L85:
+	mov	d15,#2
+.L148:
+	st.w	[a15]4,d15
+.L149:
+	mov	d15,#100
+.L150:
+	st.w	[a15]8,d15
+.L151:
+	mov	d15,#0
+.L152:
+	st.w	[a15]12,d15
+.L153:
+	mov	d15,#120
+.L154:
+	st.w	[a15],d15
+.L155:
+	movh.a	a2,#@his(IfxGtm_ATOM0_1_TOUT1_P02_1_OUT)
+	lea	a2,[a2]@los(IfxGtm_ATOM0_1_TOUT1_P02_1_OUT)
+	ld.b	d4,[a2]1
+.L156:
+	mov	d5,#1
+	mov.aa	a4,a12
+.L89:
+	call	IfxGtm_Atom_Agc_enableChannelUpdate
+.L90:
+	movh.a	a2,#@his(IfxGtm_ATOM0_1_TOUT1_P02_1_OUT)
+	lea	a2,[a2]@los(IfxGtm_ATOM0_1_TOUT1_P02_1_OUT)
+	ld.b	d4,[a2]1
+.L157:
+	mov	d5,#1
+.L158:
+	mov	d6,#0
+	mov.aa	a4,a12
+.L91:
+	call	IfxGtm_Atom_Agc_enableChannel
+.L92:
+	movh.a	a2,#@his(IfxGtm_ATOM0_1_TOUT1_P02_1_OUT)
+	lea	a2,[a2]@los(IfxGtm_ATOM0_1_TOUT1_P02_1_OUT)
+	ld.b	d4,[a2]1
+.L159:
+	mov	d5,#1
+.L160:
+	mov	d6,#0
+	mov.aa	a4,a12
+.L93:
+	call	IfxGtm_Atom_Agc_enableChannelOutput
+.L94:
+	mov.aa	a4,a12
+.L95:
+	call	IfxGtm_Atom_Agc_trigger
+.L96:
+	ld.w	d15,[a15]4
+.L161:
+	or	d15,#8
+	st.w	[a15]4,d15
+.L162:
+	ret
+.L57:
+	
+__atomDataInit_function_end:
+	.size	atomDataInit,__atomDataInit_function_end-atomDataInit
+.L35:
 	; End of function
 	
 	.sdecl	'.text.endat.initAtom',code,cluster('initAtom')
@@ -239,18 +275,20 @@ __atomCpuPwmTest_function_end:
 	
 	.global	initAtom
 ; Function initAtom
-.L9:
+.L11:
 initAtom:	.type	func
 	call	gtmClockInit
-.L138:
-	call	atomClk_withAruInit
-.L139:
+.L105:
+	call	atomClockInit
+.L106:
+	call	atomDataInit
+.L107:
 	ret
-.L51:
+.L38:
 	
 __initAtom_function_end:
 	.size	initAtom,__initAtom_function_end-initAtom
-.L33:
+.L20:
 	; End of function
 	
 	.sdecl	'.data.endat.gtm',data,cluster('gtm')
@@ -264,20 +302,22 @@ gtm:	.type	object
 	.calls	'gtmClockInit','IfxGtm_Cmu_setGclkFrequency'
 	.calls	'gtmClockInit','IfxGtm_Cmu_setClkFrequency'
 	.calls	'gtmClockInit','IfxGtm_Cmu_enableClocks'
-	.calls	'atomClk_withAruInit','IfxGtm_PinMap_setAtomTout'
-	.calls	'atomClk_withAruInit','IfxGtm_Atom_Agc_enableChannelUpdate'
-	.calls	'atomClk_withAruInit','IfxGtm_Atom_Agc_enableChannel'
-	.calls	'atomClk_withAruInit','IfxGtm_Atom_Agc_enableChannelOutput'
-	.calls	'atomClk_withAruInit','IfxGtm_Atom_Agc_trigger'
-	.calls	'atomCpuPwmTest','IfxGtm_Atom_Agc_enableChannelUpdate'
-	.calls	'atomCpuPwmTest','IfxGtm_Atom_Agc_enableChannel'
-	.calls	'atomCpuPwmTest','IfxGtm_Atom_Agc_enableChannelOutput'
-	.calls	'atomCpuPwmTest','IfxGtm_Atom_Agc_trigger'
+	.calls	'atomClockInit','IfxGtm_PinMap_setAtomTout'
+	.calls	'atomClockInit','IfxGtm_Atom_Agc_enableChannelUpdate'
+	.calls	'atomClockInit','IfxGtm_Atom_Agc_enableChannel'
+	.calls	'atomClockInit','IfxGtm_Atom_Agc_enableChannelOutput'
+	.calls	'atomClockInit','IfxGtm_Atom_Agc_trigger'
+	.calls	'atomDataInit','IfxGtm_PinMap_setAtomTout'
+	.calls	'atomDataInit','IfxGtm_Atom_Agc_enableChannelUpdate'
+	.calls	'atomDataInit','IfxGtm_Atom_Agc_enableChannel'
+	.calls	'atomDataInit','IfxGtm_Atom_Agc_enableChannelOutput'
+	.calls	'atomDataInit','IfxGtm_Atom_Agc_trigger'
 	.calls	'initAtom','gtmClockInit'
-	.calls	'initAtom','atomClk_withAruInit'
+	.calls	'initAtom','atomClockInit'
+	.calls	'initAtom','atomDataInit'
 	.calls	'gtmClockInit','',0
-	.calls	'atomClk_withAruInit','',0
-	.calls	'atomCpuPwmTest','',0
+	.calls	'atomClockInit','',0
+	.calls	'atomDataInit','',0
 	.extern	IfxGtm_enable
 	.extern	IfxGtm_Cmu_enableClocks
 	.extern	IfxGtm_Cmu_getModuleFrequency
@@ -289,20 +329,21 @@ gtm:	.type	object
 	.extern	IfxGtm_Atom_Agc_trigger
 	.extern	IfxGtm_PinMap_setAtomTout
 	.extern	IfxGtm_ATOM0_0_TOUT8_P02_8_OUT
+	.extern	IfxGtm_ATOM0_1_TOUT1_P02_1_OUT
 	.calls	'initAtom','',0
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
-.L11:
-	.word	196134
+.L13:
+	.word	196181
 	.half	3
-	.word	.L12
+	.word	.L14
 	.byte	4
-.L10:
+.L12:
 	.byte	1
 	.byte	'../endat.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\TriCore Debug (TASKING)\\',0,12,1
-	.word	.L13
+	.word	.L15
 	.byte	2,1,1,3
 	.word	192
 	.byte	4
@@ -327,7 +368,7 @@ gtm:	.type	object
 	.word	256
 	.byte	6,0,9
 	.byte	'__fract',0,4,128,1
-.L38:
+.L41:
 	.byte	9
 	.byte	'float',0,4,4,10
 	.byte	'Ifx__float_to_fract',0,3,1,226,2,18
@@ -2530,7 +2571,7 @@ gtm:	.type	object
 	.word	13777
 	.byte	16,2,35,32,0,8
 	.word	13782
-.L43:
+.L46:
 	.byte	3
 	.word	13923
 	.byte	8
@@ -2970,7 +3011,7 @@ gtm:	.type	object
 	.word	16662
 	.byte	208,8,3,35,176,7,0,8
 	.word	16673
-.L41:
+.L44:
 	.byte	3
 	.word	17001
 	.byte	17,9,137,2,9,1,18
@@ -2982,15 +3023,21 @@ gtm:	.type	object
 	.byte	'IfxGtm_Atom_Ch_4',0,4,18
 	.byte	'IfxGtm_Atom_Ch_5',0,5,18
 	.byte	'IfxGtm_Atom_Ch_6',0,6,18
-	.byte	'IfxGtm_Atom_Ch_7',0,7,0,10
+	.byte	'IfxGtm_Atom_Ch_7',0,7,0
+.L50:
+	.byte	10
 	.byte	'IfxGtm_Atom_Ch_getChannelPointer',0,3,7,193,9,29
 	.word	13928
-	.byte	1,1,5
+	.byte	1,1
+.L52:
+	.byte	5
 	.byte	'atom',0,7,193,9,76
 	.word	17006
+.L54:
 	.byte	5
 	.byte	'channel',0,7,193,9,97
 	.word	17011
+.L56:
 	.byte	6,0,11
 	.byte	'_Ifx_GTM_TOM_CH_CTRL_Bits',0,8,169,41,16,4,12
 	.byte	'reserved_0',0,4
@@ -18417,7 +18464,7 @@ gtm:	.type	object
 	.word	123666
 	.byte	128,160,2,4,35,128,224,61,0,8
 	.word	123679
-.L52:
+.L64:
 	.byte	3
 	.word	125511
 	.byte	23
@@ -18474,7 +18521,7 @@ gtm:	.type	object
 	.word	17251
 	.byte	6,0,8
 	.word	16416
-.L45:
+.L48:
 	.byte	3
 	.word	126020
 	.byte	23
@@ -26665,10 +26712,15 @@ gtm:	.type	object
 	.byte	31
 	.byte	'IfxGtm_ATOM0_0_TOUT8_P02_8_OUT',0,14,159,1,32
 	.word	196090
+	.byte	1,1,28
+	.word	127104
+	.byte	31
+	.byte	'IfxGtm_ATOM0_1_TOUT1_P02_1_OUT',0,14,174,1,32
+	.word	196137
 	.byte	1,1,0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
-.L12:
+.L14:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,39,12,0,0,3,15,0,73,19,0,0,4,46,1,3,8,32,13
 	.byte	58,15,59,15,57,15,54,15,39,12,0,0,5,5,0,3,8,58,15,59,15,57,15,73,19,0,0,6,11,0,0,0,7,59,0,3,8,0,0,8,53
 	.byte	0,73,19,0,0,9,36,0,3,8,11,15,62,15,0,0,10,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,11,19
@@ -26681,12 +26733,12 @@ gtm:	.type	object
 	.byte	57,15,73,19,63,12,60,12,0,0,0
 	.sdecl	'.debug_line',debug
 	.sect	'.debug_line'
-.L13:
-	.word	.L81-.L80
-.L80:
+.L15:
+	.word	.L98-.L97
+.L97:
 	.half	3
-	.word	.L83-.L82
-.L82:
+	.word	.L100-.L99
+.L99:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'C:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\Infra\\\\Sfr\\\\TC38x',0
 	.byte	'C:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Gtm\\\\Std',0
@@ -26702,8 +26754,7 @@ gtm:	.type	object
 	.byte	'C:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\Src\\Std\\IfxSrc.h',0
 	.byte	0,0,0
 	.byte	'IfxSrc_regdef.h',0,1,0,0
-	.byte	'C:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\Gtm\\Std\\IfxGtm_Atom.h',0
-	.byte	0,0,0
+	.byte	'IfxGtm_Atom.h',0,2,0,0
 	.byte	'IfxGtm_regdef.h',0,1,0,0
 	.byte	'C:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\_Impl\\IfxGtm_cfg_TC38x.h',0
 	.byte	0,0,0
@@ -26723,443 +26774,512 @@ gtm:	.type	object
 	.byte	'C:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\_Impl\\IfxScu_cfg_TC38x.h',0
 	.byte	0,0,0
 	.byte	'IfxScu_regdef.h',0,1,0,0
-	.byte	'C:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\Gtm\\Std\\IfxGtm_Tbu.h',0
-	.byte	0,0,0
+	.byte	'IfxGtm_Tbu.h',0,2,0,0
 	.byte	'C:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\_Impl\\IfxSrc_cfg_TC38x.h',0
 	.byte	0,0,0,0
-.L83:
-.L81:
-	.sdecl	'.debug_info',debug,cluster('gtmClockInit')
-	.sect	'.debug_info'
-.L14:
-	.word	264
-	.half	3
-	.word	.L15
-	.byte	4,1
-	.byte	'../endat.c',0
-	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\TriCore Debug (TASKING)\\',0,12,1
-	.word	.L17,.L16
-	.byte	2
-	.word	.L10
-	.byte	3
-	.byte	'gtmClockInit',0,1,18,13,1,1
-	.word	.L3,.L36,.L2
-	.byte	4
-	.word	.L3,.L36
-	.byte	4
-	.word	.L37,.L36
-	.byte	5
-	.byte	'f',0,1,21,13
-	.word	.L38,.L39
-	.byte	0,0,0,0
-	.sdecl	'.debug_abbrev',debug,cluster('gtmClockInit')
-	.sect	'.debug_abbrev'
-.L15:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
-	.byte	39,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
-	.sdecl	'.debug_line',debug,cluster('gtmClockInit')
-	.sect	'.debug_line'
-.L16:
-	.word	.L85-.L84
-.L84:
-	.half	3
-	.word	.L87-.L86
-.L86:
-	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../endat.c',0,0,0,0,0
-.L87:
-	.byte	5,19,7,0,5,2
-	.word	.L3
-	.byte	3,19,1,5,47,9
-	.half	.L37-.L3
-	.byte	3,1,1,5,15,9
-	.half	.L53-.L37
-	.byte	1,5,33,9
-	.half	.L55-.L53
-	.byte	3,1,1,5,38,9
-	.half	.L88-.L55
-	.byte	1,5,32,9
-	.half	.L56-.L88
-	.byte	3,1,1,5,37,9
-	.half	.L89-.L56
-	.byte	1,5,55,9
-	.half	.L90-.L89
-	.byte	1,5,29,9
-	.half	.L58-.L90
-	.byte	3,1,1,5,34,9
-	.half	.L91-.L58
-	.byte	1,5,1,9
-	.half	.L92-.L91
-	.byte	3,1,1,7,9
-	.half	.L18-.L92
-	.byte	0,1,1
-.L85:
-	.sdecl	'.debug_ranges',debug,cluster('gtmClockInit')
-	.sect	'.debug_ranges'
-.L17:
-	.word	-1,.L3,0,.L18-.L3,0,0
-	.sdecl	'.debug_info',debug,cluster('atomClk_withAruInit')
-	.sect	'.debug_info'
-.L19:
-	.word	295
-	.half	3
-	.word	.L20
-	.byte	4,1
-	.byte	'../endat.c',0
-	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\TriCore Debug (TASKING)\\',0,12,1
-	.word	.L22,.L21
-	.byte	2
-	.word	.L10
-	.byte	3
-	.byte	'atomClk_withAruInit',0,1,27,13,1,1
-	.word	.L5,.L40,.L4
-	.byte	4
-	.word	.L5,.L40
-	.byte	5
-	.byte	'atom',0,1,29,19
-	.word	.L41,.L42
-	.byte	5
-	.byte	'ch',0,1,30,22
-	.word	.L43,.L44
-	.byte	5
-	.byte	'agc',0,1,31,23
-	.word	.L45,.L46
-	.byte	0,0,0
-	.sdecl	'.debug_abbrev',debug,cluster('atomClk_withAruInit')
-	.sect	'.debug_abbrev'
-.L20:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
-	.byte	39,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
-	.sdecl	'.debug_line',debug,cluster('atomClk_withAruInit')
-	.sect	'.debug_line'
-.L21:
-	.word	.L94-.L93
-.L93:
-	.half	3
-	.word	.L96-.L95
-.L95:
-	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../endat.c',0,0,0,0,0
-.L96:
-	.byte	5,37,7,0,5,2
-	.word	.L5
-	.byte	3,28,1,5,36,9
-	.half	.L97-.L5
-	.byte	1,5,27,9
-	.half	.L98-.L97
-	.byte	1,5,36,9
-	.half	.L99-.L98
-	.byte	1,5,34,9
-	.half	.L59-.L99
-	.byte	3,2,1,5,32,9
-	.half	.L60-.L59
-	.byte	3,3,1,5,30,9
-	.half	.L100-.L60
-	.byte	3,1,1,9
-	.half	.L101-.L100
-	.byte	3,1,1,5,22,9
-	.half	.L102-.L101
-	.byte	3,4,1,5,16,9
-	.half	.L103-.L102
-	.byte	1,5,17,9
-	.half	.L104-.L103
-	.byte	3,3,1,5,15,9
-	.half	.L105-.L104
-	.byte	1,5,17,9
-	.half	.L106-.L105
-	.byte	3,1,1,5,15,9
-	.half	.L107-.L106
-	.byte	1,5,20,9
-	.half	.L108-.L107
-	.byte	3,3,1,5,18,9
-	.half	.L109-.L108
-	.byte	1,5,46,9
-	.half	.L110-.L109
-	.byte	3,3,1,5,55,9
-	.half	.L111-.L110
-	.byte	1,5,40,9
-	.half	.L62-.L111
-	.byte	3,1,1,5,49,9
-	.half	.L112-.L62
-	.byte	1,5,55,9
-	.half	.L113-.L112
-	.byte	1,5,46,9
-	.half	.L64-.L113
-	.byte	3,1,1,5,55,9
-	.half	.L114-.L64
-	.byte	1,5,61,9
-	.half	.L115-.L114
-	.byte	1,5,29,9
-	.half	.L66-.L115
-	.byte	3,6,1,5,15,9
-	.half	.L68-.L66
-	.byte	3,6,1,5,23,9
-	.half	.L116-.L68
-	.byte	1,5,1,9
-	.half	.L117-.L116
-	.byte	3,1,1,7,9
-	.half	.L23-.L117
-	.byte	0,1,1
-.L94:
-	.sdecl	'.debug_ranges',debug,cluster('atomClk_withAruInit')
-	.sect	'.debug_ranges'
-.L22:
-	.word	-1,.L5,0,.L23-.L5,0,0
-	.sdecl	'.debug_info',debug,cluster('atomCpuPwmTest')
-	.sect	'.debug_info'
-.L24:
-	.word	291
-	.half	3
-	.word	.L25
-	.byte	4,1
-	.byte	'../endat.c',0
-	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\TriCore Debug (TASKING)\\',0,12,1
-	.word	.L27,.L26
-	.byte	2
-	.word	.L10
-	.byte	3
-	.byte	'atomCpuPwmTest',0,1,66,6,1,1,1
-	.word	.L7,.L47,.L6
-	.byte	4
-	.word	.L7,.L47
-	.byte	5
-	.byte	'atom',0,1,68,19
-	.word	.L41,.L48
-	.byte	5
-	.byte	'ch',0,1,69,22
-	.word	.L43,.L49
-	.byte	5
-	.byte	'agc',0,1,70,23
-	.word	.L45,.L50
-	.byte	0,0,0
-	.sdecl	'.debug_abbrev',debug,cluster('atomCpuPwmTest')
-	.sect	'.debug_abbrev'
-.L25:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
-	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
-	.sdecl	'.debug_line',debug,cluster('atomCpuPwmTest')
-	.sect	'.debug_line'
-.L26:
-	.word	.L119-.L118
-.L118:
-	.half	3
-	.word	.L121-.L120
-.L120:
-	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../endat.c',0,0,0,0,0
-.L121:
-	.byte	5,43,7,0,5,2
-	.word	.L7
-	.byte	3,195,0,1,5,42,9
-	.half	.L122-.L7
-	.byte	1,5,34,9
-	.half	.L69-.L122
-	.byte	3,2,1,5,41,9
-	.half	.L71-.L69
-	.byte	3,3,1,5,16,9
-	.half	.L123-.L71
-	.byte	1,5,17,9
-	.half	.L124-.L123
-	.byte	3,2,1,5,15,9
-	.half	.L125-.L124
-	.byte	1,5,17,9
-	.half	.L126-.L125
-	.byte	3,1,1,5,15,9
-	.half	.L127-.L126
-	.byte	1,5,46,9
-	.half	.L128-.L127
-	.byte	3,2,1,5,55,9
-	.half	.L129-.L128
-	.byte	1,5,40,9
-	.half	.L73-.L129
-	.byte	3,1,1,5,49,9
-	.half	.L130-.L73
-	.byte	1,5,55,9
-	.half	.L131-.L130
-	.byte	1,5,46,9
-	.half	.L75-.L131
-	.byte	3,1,1,5,55,9
-	.half	.L132-.L75
-	.byte	1,5,61,9
-	.half	.L133-.L132
-	.byte	1,5,29,9
-	.half	.L77-.L133
-	.byte	3,1,1,5,1,9
-	.half	.L79-.L77
-	.byte	3,1,1,7,9
-	.half	.L28-.L79
-	.byte	0,1,1
-.L119:
-	.sdecl	'.debug_ranges',debug,cluster('atomCpuPwmTest')
-	.sect	'.debug_ranges'
-.L27:
-	.word	-1,.L7,0,.L28-.L7,0,0
+.L100:
+.L98:
 	.sdecl	'.debug_info',debug,cluster('initAtom')
 	.sect	'.debug_info'
-.L29:
+.L16:
 	.word	236
 	.half	3
-	.word	.L30
+	.word	.L17
 	.byte	4,1
 	.byte	'../endat.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\TriCore Debug (TASKING)\\',0,12,1
-	.word	.L32,.L31
+	.word	.L19,.L18
 	.byte	2
-	.word	.L10
+	.word	.L12
 	.byte	3
-	.byte	'initAtom',0,1,85,6,1,1,1
-	.word	.L9,.L51,.L8
+	.byte	'initAtom',0,1,98,6,1,1,1
+	.word	.L11,.L38,.L10
 	.byte	4
-	.word	.L9,.L51
+	.word	.L11,.L38
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('initAtom')
 	.sect	'.debug_abbrev'
-.L30:
+.L17:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('initAtom')
 	.sect	'.debug_line'
-.L31:
-	.word	.L135-.L134
-.L134:
+.L18:
+	.word	.L102-.L101
+.L101:
 	.half	3
-	.word	.L137-.L136
-.L136:
+	.word	.L104-.L103
+.L103:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../endat.c',0,0,0,0,0
-.L137:
+.L104:
 	.byte	5,17,7,0,5,2
-	.word	.L9
-	.byte	3,214,0,1,5,24,9
-	.half	.L138-.L9
+	.word	.L11
+	.byte	3,227,0,1,5,18,9
+	.half	.L105-.L11
+	.byte	3,1,1,5,17,9
+	.half	.L106-.L105
 	.byte	3,1,1,5,1,9
-	.half	.L139-.L138
+	.half	.L107-.L106
 	.byte	3,1,1,7,9
-	.half	.L33-.L139
+	.half	.L20-.L107
 	.byte	0,1,1
-.L135:
+.L102:
 	.sdecl	'.debug_ranges',debug,cluster('initAtom')
 	.sect	'.debug_ranges'
+.L19:
+	.word	-1,.L11,0,.L20-.L11,0,0
+	.sdecl	'.debug_info',debug,cluster('gtmClockInit')
+	.sect	'.debug_info'
+.L21:
+	.word	264
+	.half	3
+	.word	.L22
+	.byte	4,1
+	.byte	'../endat.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L24,.L23
+	.byte	2
+	.word	.L12
+	.byte	3
+	.byte	'gtmClockInit',0,1,26,13,1,1
+	.word	.L5,.L39,.L4
+	.byte	4
+	.word	.L5,.L39
+	.byte	4
+	.word	.L40,.L39
+	.byte	5
+	.byte	'f',0,1,30,13
+	.word	.L41,.L42
+	.byte	0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('gtmClockInit')
+	.sect	'.debug_abbrev'
+.L22:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('gtmClockInit')
+	.sect	'.debug_line'
+.L23:
+	.word	.L109-.L108
+.L108:
+	.half	3
+	.word	.L111-.L110
+.L110:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../endat.c',0,0,0,0,0
+.L111:
+	.byte	5,19,7,0,5,2
+	.word	.L5
+	.byte	3,27,1,5,47,9
+	.half	.L40-.L5
+	.byte	3,2,1,5,15,9
+	.half	.L65-.L40
+	.byte	1,5,33,9
+	.half	.L67-.L65
+	.byte	3,3,1,5,38,9
+	.half	.L112-.L67
+	.byte	1,5,32,9
+	.half	.L68-.L112
+	.byte	3,1,1,5,37,9
+	.half	.L113-.L68
+	.byte	1,5,55,9
+	.half	.L114-.L113
+	.byte	1,5,29,9
+	.half	.L70-.L114
+	.byte	3,1,1,5,34,9
+	.half	.L115-.L70
+	.byte	1,5,1,9
+	.half	.L116-.L115
+	.byte	3,1,1,7,9
+	.half	.L25-.L116
+	.byte	0,1,1
+.L109:
+	.sdecl	'.debug_ranges',debug,cluster('gtmClockInit')
+	.sect	'.debug_ranges'
+.L24:
+	.word	-1,.L5,0,.L25-.L5,0,0
+	.sdecl	'.debug_info',debug,cluster('atomClockInit')
+	.sect	'.debug_info'
+.L26:
+	.word	334
+	.half	3
+	.word	.L27
+	.byte	4,1
+	.byte	'../endat.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L29,.L28
+	.byte	2
+	.word	.L12
+	.byte	3
+	.byte	'atomClockInit',0,1,38,13,1,1
+	.word	.L7,.L43,.L6
+	.byte	4
+	.word	.L7,.L43
+	.byte	5
+	.byte	'atom',0,1,40,23
+	.word	.L44,.L45
+	.byte	5
+	.byte	'ch',0,1,41,23
+	.word	.L46,.L47
+	.byte	5
+	.byte	'agc',0,1,42,23
+	.word	.L48,.L49
+	.byte	6
+	.word	.L50,.L51,.L2
+	.byte	7
+	.word	.L52,.L53
+	.byte	7
+	.word	.L54,.L55
+	.byte	8
+	.word	.L56,.L51,.L2
+	.byte	0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('atomClockInit')
+	.sect	'.debug_abbrev'
+.L27:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,6,29,1,49,16
+	.byte	17,1,18,1,0,0,7,5,0,49,16,2,6,0,0,8,11,0,49,16,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('atomClockInit')
+	.sect	'.debug_line'
+.L28:
+	.word	.L118-.L117
+.L117:
+	.half	3
+	.word	.L120-.L119
+.L119:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'C:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Gtm\\\\Std',0
+	.byte	0
+	.byte	'../endat.c',0,0,0,0
+	.byte	'IfxGtm_Atom.h',0,1,0,0,0
+.L120:
+	.byte	5,47,7,0,5,2
+	.word	.L7
+	.byte	3,39,1,5,46,9
+	.half	.L121-.L7
+	.byte	1,5,69,9
+	.half	.L71-.L121
+	.byte	3,1,1,4,2,5,41,9
+	.half	.L51-.L71
+	.byte	3,154,9,1,5,67,9
+	.half	.L73-.L51
+	.byte	1,5,60,9
+	.half	.L122-.L73
+	.byte	1,5,5,9
+	.half	.L74-.L122
+	.byte	1,4,1,5,35,9
+	.half	.L2-.L74
+	.byte	3,231,118,1,5,32,9
+	.half	.L75-.L2
+	.byte	3,2,1,5,30,9
+	.half	.L123-.L75
+	.byte	3,1,1,9
+	.half	.L124-.L123
+	.byte	3,1,1,5,22,9
+	.half	.L72-.L124
+	.byte	3,3,1,5,16,9
+	.half	.L125-.L72
+	.byte	1,5,17,9
+	.half	.L126-.L125
+	.byte	3,3,1,5,15,9
+	.half	.L127-.L126
+	.byte	1,5,17,9
+	.half	.L128-.L127
+	.byte	3,1,1,5,15,9
+	.half	.L129-.L128
+	.byte	1,5,20,9
+	.half	.L130-.L129
+	.byte	3,3,1,5,18,9
+	.half	.L131-.L130
+	.byte	1,5,46,9
+	.half	.L132-.L131
+	.byte	3,2,1,5,59,9
+	.half	.L133-.L132
+	.byte	1,5,40,9
+	.half	.L77-.L133
+	.byte	3,1,1,5,53,9
+	.half	.L134-.L77
+	.byte	1,5,59,9
+	.half	.L135-.L134
+	.byte	1,5,46,9
+	.half	.L79-.L135
+	.byte	3,1,1,5,59,9
+	.half	.L136-.L79
+	.byte	1,5,65,9
+	.half	.L137-.L136
+	.byte	1,5,29,9
+	.half	.L81-.L137
+	.byte	3,1,1,5,15,9
+	.half	.L83-.L81
+	.byte	3,2,1,5,23,9
+	.half	.L138-.L83
+	.byte	1,5,1,9
+	.half	.L139-.L138
+	.byte	3,1,1,7,9
+	.half	.L30-.L139
+	.byte	0,1,1
+.L118:
+	.sdecl	'.debug_ranges',debug,cluster('atomClockInit')
+	.sect	'.debug_ranges'
+.L29:
+	.word	-1,.L7,0,.L30-.L7,0,0
+	.sdecl	'.debug_info',debug,cluster('atomDataInit')
+	.sect	'.debug_info'
+.L31:
+	.word	333
+	.half	3
+	.word	.L32
+	.byte	4,1
+	.byte	'../endat.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L34,.L33
+	.byte	2
+	.word	.L12
+	.byte	3
+	.byte	'atomDataInit',0,1,67,13,1,1
+	.word	.L9,.L57,.L8
+	.byte	4
+	.word	.L9,.L57
+	.byte	5
+	.byte	'atom',0,1,69,23
+	.word	.L44,.L58
+	.byte	5
+	.byte	'ch',0,1,70,23
+	.word	.L46,.L59
+	.byte	5
+	.byte	'agc',0,1,71,23
+	.word	.L48,.L60
+	.byte	6
+	.word	.L50,.L61,.L3
+	.byte	7
+	.word	.L52,.L62
+	.byte	7
+	.word	.L54,.L63
+	.byte	8
+	.word	.L56,.L61,.L3
+	.byte	0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('atomDataInit')
+	.sect	'.debug_abbrev'
 .L32:
-	.word	-1,.L9,0,.L33-.L9,0,0
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,6,29,1,49,16
+	.byte	17,1,18,1,0,0,7,5,0,49,16,2,6,0,0,8,11,0,49,16,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('atomDataInit')
+	.sect	'.debug_line'
+.L33:
+	.word	.L141-.L140
+.L140:
+	.half	3
+	.word	.L143-.L142
+.L142:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'C:\\\\Users\\\\Zbook Firefly14 G8\\\\AURIX-v1.10.28-workspace\\\\mcsdemo\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Gtm\\\\Std',0
+	.byte	0
+	.byte	'../endat.c',0,0,0,0
+	.byte	'IfxGtm_Atom.h',0,1,0,0,0
+.L143:
+	.byte	5,47,7,0,5,2
+	.word	.L9
+	.byte	3,196,0,1,5,46,9
+	.half	.L144-.L9
+	.byte	1,5,69,9
+	.half	.L84-.L144
+	.byte	3,1,1,4,2,5,41,9
+	.half	.L61-.L84
+	.byte	3,253,8,1,5,67,9
+	.half	.L86-.L61
+	.byte	1,5,60,9
+	.half	.L145-.L86
+	.byte	1,5,5,9
+	.half	.L87-.L145
+	.byte	1,4,1,5,35,9
+	.half	.L3-.L87
+	.byte	3,132,119,1,5,32,9
+	.half	.L88-.L3
+	.byte	3,2,1,5,30,9
+	.half	.L146-.L88
+	.byte	3,1,1,9
+	.half	.L147-.L146
+	.byte	3,1,1,5,22,9
+	.half	.L85-.L147
+	.byte	3,3,1,5,16,9
+	.half	.L148-.L85
+	.byte	1,5,17,9
+	.half	.L149-.L148
+	.byte	3,3,1,5,15,9
+	.half	.L150-.L149
+	.byte	1,5,17,9
+	.half	.L151-.L150
+	.byte	3,1,1,5,15,9
+	.half	.L152-.L151
+	.byte	1,5,20,9
+	.half	.L153-.L152
+	.byte	3,3,1,5,18,9
+	.half	.L154-.L153
+	.byte	1,5,46,9
+	.half	.L155-.L154
+	.byte	3,2,1,5,60,9
+	.half	.L156-.L155
+	.byte	1,5,40,9
+	.half	.L90-.L156
+	.byte	3,1,1,5,54,9
+	.half	.L157-.L90
+	.byte	1,5,60,9
+	.half	.L158-.L157
+	.byte	1,5,46,9
+	.half	.L92-.L158
+	.byte	3,1,1,5,60,9
+	.half	.L159-.L92
+	.byte	1,5,66,9
+	.half	.L160-.L159
+	.byte	1,5,29,9
+	.half	.L94-.L160
+	.byte	3,3,1,5,15,9
+	.half	.L96-.L94
+	.byte	3,3,1,5,23,9
+	.half	.L161-.L96
+	.byte	1,5,1,9
+	.half	.L162-.L161
+	.byte	3,1,1,7,9
+	.half	.L35-.L162
+	.byte	0,1,1
+.L141:
+	.sdecl	'.debug_ranges',debug,cluster('atomDataInit')
+	.sect	'.debug_ranges'
+.L34:
+	.word	-1,.L9,0,.L35-.L9,0,0
 	.sdecl	'.debug_info',debug,cluster('gtm')
 	.sect	'.debug_info'
-.L34:
+.L36:
 	.word	208
 	.half	3
-	.word	.L35
+	.word	.L37
 	.byte	4,1
 	.byte	'../endat.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\Zbook Firefly14 G8\\AURIX-v1.10.28-workspace\\mcsdemo\\TriCore Debug (TASKING)\\',0,12,1,2
-	.word	.L10
+	.word	.L12
 	.byte	3
-	.byte	'gtm',0,15,16,17
-	.word	.L52
+	.byte	'gtm',0,15,24,17
+	.word	.L64
 	.byte	5,3
 	.word	gtm
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('gtm')
 	.sect	'.debug_abbrev'
-.L35:
+.L37:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
-	.sdecl	'.debug_loc',debug,cluster('atomClk_withAruInit')
+	.sdecl	'.debug_loc',debug,cluster('atomClockInit')
 	.sect	'.debug_loc'
-.L46:
-	.word	-1,.L5,.L60-.L5,.L40-.L5
+.L49:
+	.word	-1,.L7,.L75-.L7,.L43-.L7
 	.half	1
 	.byte	108
-	.word	.L61-.L5,.L62-.L5
-	.half	1
-	.byte	100
-	.word	.L63-.L5,.L64-.L5
-	.half	1
-	.byte	100
-	.word	.L65-.L5,.L66-.L5
-	.half	1
-	.byte	100
-	.word	.L67-.L5,.L68-.L5
-	.half	1
-	.byte	100
-	.word	0,0
-.L42:
-	.word	-1,.L5,.L59-.L5,.L40-.L5
-	.half	1
-	.byte	111
-	.word	0,0
-.L4:
-	.word	-1,.L5,0,.L40-.L5
-	.half	2
-	.byte	138,0
-	.word	0,0
-.L44:
-	.word	0,0
-	.sdecl	'.debug_loc',debug,cluster('atomCpuPwmTest')
-	.sect	'.debug_loc'
-.L50:
-	.word	-1,.L7,.L71-.L7,.L47-.L7
-	.half	1
-	.byte	108
-	.word	.L72-.L7,.L73-.L7
-	.half	1
-	.byte	100
-	.word	.L74-.L7,.L75-.L7
-	.half	1
-	.byte	100
 	.word	.L76-.L7,.L77-.L7
 	.half	1
 	.byte	100
 	.word	.L78-.L7,.L79-.L7
 	.half	1
 	.byte	100
-	.word	0,0
-.L48:
-	.word	-1,.L7,.L69-.L7,.L70-.L7
+	.word	.L80-.L7,.L81-.L7
 	.half	1
-	.byte	111
+	.byte	100
+	.word	.L82-.L7,.L83-.L7
+	.half	1
+	.byte	100
+	.word	0,0
+.L45:
+	.word	-1,.L7,.L71-.L7,.L72-.L7
+	.half	1
+	.byte	98
+	.word	.L73-.L7,.L74-.L7
+	.half	1
+	.byte	95
+	.word	0,0
+.L53:
 	.word	0,0
 .L6:
-	.word	-1,.L7,0,.L47-.L7
+	.word	-1,.L7,0,.L43-.L7
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L49:
+.L47:
+	.word	0,0
+.L55:
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('atomDataInit')
+	.sect	'.debug_loc'
+.L60:
+	.word	-1,.L9,.L88-.L9,.L57-.L9
+	.half	1
+	.byte	108
+	.word	.L89-.L9,.L90-.L9
+	.half	1
+	.byte	100
+	.word	.L91-.L9,.L92-.L9
+	.half	1
+	.byte	100
+	.word	.L93-.L9,.L94-.L9
+	.half	1
+	.byte	100
+	.word	.L95-.L9,.L96-.L9
+	.half	1
+	.byte	100
+	.word	0,0
+.L58:
+	.word	-1,.L9,.L84-.L9,.L85-.L9
+	.half	1
+	.byte	98
+	.word	.L86-.L9,.L87-.L9
+	.half	1
+	.byte	95
+	.word	0,0
+.L62:
+	.word	0,0
+.L8:
+	.word	-1,.L9,0,.L57-.L9
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L59:
+	.word	0,0
+.L63:
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('gtmClockInit')
 	.sect	'.debug_loc'
-.L39:
-	.word	-1,.L3,.L53-.L3,.L54-.L3
+.L42:
+	.word	-1,.L5,.L65-.L5,.L66-.L5
 	.half	1
 	.byte	82
-	.word	.L55-.L3,.L36-.L3
+	.word	.L67-.L5,.L39-.L5
 	.half	1
 	.byte	95
-	.word	.L54-.L3,.L56-.L3
+	.word	.L66-.L5,.L68-.L5
 	.half	1
 	.byte	84
-	.word	.L57-.L3,.L58-.L3
+	.word	.L69-.L5,.L70-.L5
 	.half	1
 	.byte	85
 	.word	0,0
-.L2:
-	.word	-1,.L3,0,.L36-.L3
+.L4:
+	.word	-1,.L5,0,.L39-.L5
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('initAtom')
 	.sect	'.debug_loc'
-.L8:
-	.word	-1,.L9,0,.L51-.L9
+.L10:
+	.word	-1,.L11,0,.L38-.L11
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_frame',debug
 	.sect	'.debug_frame'
-.L140:
+.L163:
 	.word	48
 	.word	-1
 	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
@@ -27167,17 +27287,17 @@ gtm:	.type	object
 	.sdecl	'.debug_frame',debug,cluster('gtmClockInit')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L140,.L3,.L36-.L3
-	.sdecl	'.debug_frame',debug,cluster('atomClk_withAruInit')
+	.word	.L163,.L5,.L39-.L5
+	.sdecl	'.debug_frame',debug,cluster('atomClockInit')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L140,.L5,.L40-.L5
-	.sdecl	'.debug_frame',debug,cluster('atomCpuPwmTest')
+	.word	.L163,.L7,.L43-.L7
+	.sdecl	'.debug_frame',debug,cluster('atomDataInit')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L140,.L7,.L47-.L7
+	.word	.L163,.L9,.L57-.L9
 	.sdecl	'.debug_frame',debug,cluster('initAtom')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L140,.L9,.L51-.L9
+	.word	.L163,.L11,.L38-.L11
 	; Module end
